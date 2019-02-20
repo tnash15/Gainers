@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+                                             android:layout_height="match_parent"
+android:orientation="vertical">
 
     <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="Symbol"
             android:ems="10"
-            android:id="@+id/etSymbol" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginTop="60dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:id="@+id/etSymbol"/>
 
     <Button
             android:text="Quote"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnResults" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="36dp"
-            app:layout_constraintTop_toBottomOf="@+id/etSymbol" app:layout_constraintHorizontal_bias="0.498"/>
+            android:id="@+id/btnResults"/>
     <TextView
-            android:text="TextView"
+            android:text="Results"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvResults" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnResults"/>
-</android.support.constraint.ConstraintLayout>
+            android:id="@+id/tvResults" />
+</LinearLayout>

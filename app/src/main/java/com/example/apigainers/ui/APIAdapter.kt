@@ -34,12 +34,10 @@ class APIAdapter : RecyclerView.Adapter<APIAdapter.StockViewHolder>(){
     class StockViewHolder(val view: View): RecyclerView.ViewHolder(view){
         fun bind(data: Response) {
             val tvSymbol = view.findViewById<TextView>(R.id.tvSymbol)
-            tvSymbol.text = data.symbol
-
             val tvCompanyName = view.findViewById<TextView>(R.id.tvCompanyName)
-            tvCompanyName.text = data.companyName
-
             val tvSector = view.findViewById<TextView>(R.id.tvSector)
+            tvSymbol.text = data.symbol
+            tvCompanyName.text = data.companyName
             tvSector.text = data.sector
         }
 

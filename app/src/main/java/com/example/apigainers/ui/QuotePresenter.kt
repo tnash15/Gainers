@@ -13,11 +13,9 @@ class QuotePresenter (
     private val compositeDisposable = CompositeDisposable()
 
     override fun getQuote(symbol: String) {
-        compositeDisposable.add(stService.getQuote()
+        compositeDisposable.add(stService.getQuote(symbol)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
-            .subscribe({ view.showQuote(it) }, { throwable -> view.showError(throwable.message!!) })
-        )
-
+            .subscribe({ view.showQuote(it) }, { throwable -> view.showError(throwable.message!!) }))
     }
 }

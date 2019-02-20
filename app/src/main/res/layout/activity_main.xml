@@ -6,22 +6,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.MainActivity">
-    <Button
-            android:text="Gainers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnGainers" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="68dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+
     <android.support.v7.widget.RecyclerView
             android:layout_width="395dp"
             android:layout_height="202dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="68dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnGainers" android:id="@+id/recyclerView"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            android:id="@+id/recyclerView" android:layout_marginTop="84dp" app:layout_constraintTop_toTopOf="parent"/>
     <Button
             android:text="Quote"
             android:layout_width="wrap_content"

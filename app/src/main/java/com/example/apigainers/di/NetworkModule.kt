@@ -23,7 +23,6 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    @OkHttpWithLogging
     fun provideHttpClient(loggingInterceptor: HttpLoggingInterceptor): OkHttpClient {
         return OkHttpClient
             .Builder()
@@ -42,7 +41,7 @@ class NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(retrofitBuilder: Retrofit.Builder, @OkHttpWithLogging okHttpClient: OkHttpClient): Retrofit{
+    fun provideRetrofit(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient): Retrofit{
         return retrofitBuilder
             .client(okHttpClient)
             .build()

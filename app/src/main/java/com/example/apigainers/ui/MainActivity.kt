@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity(), HomeContract.View {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = APIAdapter
 
-        btnGainers.setOnClickListener {
-            homePresenter.getStock()
-        }
+       // btnGainers.setOnClickListener {
+        homePresenter.getStock()
+     //   }
 
         btnQuote.setOnClickListener {
             val intent = Intent( this, SecondActivity::class.java)
